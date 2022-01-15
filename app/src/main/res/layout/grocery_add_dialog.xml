@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_shade_1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Items to Cart"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:id="@+id/TvHeading"
+            />
+        <LinearLayout
+            android:id="@+id/dialogLl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/TvHeading">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextInputEditTextTheme"
+            android:layout_margin="5dp"
+            android:hint="Enter item name"
+            android:padding="5dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etItemName"
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextInputEditTextTheme"
+            android:layout_margin="5dp"
+            android:hint="Enter item quantity"
+            android:padding="5dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etItemQuantity"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextInputEditTextTheme"
+            android:layout_margin="5dp"
+            android:hint="Enter item price"
+            android:padding="5dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etItemPrice"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:background="@drawable/custom_button_back"
+                android:layout_margin="8dp"
+                android:id="@+id/btnCancel"
+                android:textAllCaps="false"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add"
+                android:background="@drawable/custom_button_back"
+                android:layout_margin="8dp"
+                android:id="@+id/btnAdd"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
